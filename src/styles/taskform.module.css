@@ -12,7 +12,7 @@
     border: 1px solid #282c34;
 }
 
-.form input[type="submit"]{
+.form input[type="submit"] {
     background-color: #61dafb;
     border: 1px solid #61dafb;
     color: #000;
@@ -20,7 +20,7 @@
     cursor: pointer;
 }
 
-.form input[type="submit"]:hover{
+.form input[type="submit"]:hover {
     background-color: #fff;
     border-color: #282c34;
 }

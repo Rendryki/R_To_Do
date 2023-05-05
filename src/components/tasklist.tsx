@@ -5,7 +5,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 interface Props {
     taskList: ITask[],
     handleDelete(id:number):void,
-    handleEdit(task:ITask): void
+    handleEdit(task:ITask): void;
 }
 
 const TaskList = ({taskList, handleDelete, handleEdit}: Props) => {
@@ -21,13 +21,12 @@ const TaskList = ({taskList, handleDelete, handleEdit}: Props) => {
                         <div className={styles.actions}>
                             <i className="bi bi-pencil" onClick={() => {handleEdit(task)}}></i>
                             <i className="bi bi-trash" onClick={() => {handleDelete(task.id)}}></i>
-                            
                         </div>
                     </div>
                 )))
-            :
-            <p>nao tem tarefa cadastrada</p>
-            }
+            :(
+            <p>Não há nenhuma tarefa cadastrada.</p>
+            )}
         </>
     )
 }

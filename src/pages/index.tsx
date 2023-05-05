@@ -18,7 +18,7 @@ export default function Home() {
       taskList.filter((task) => {
         return task.id !== id;
       })
-    )
+    );
   }
 
   const hideOrShowModal = (display:boolean) => {
@@ -40,9 +40,8 @@ export default function Home() {
     const updatedItems = taskList.map((task) => {
       return task.id === updatedTask.id ? updatedTask : task;
     })
-    setTaskList(updatedItems)
-
-    hideOrShowModal(false)
+    setTaskList(updatedItems);
+    hideOrShowModal(false);
   }
 
   return (
