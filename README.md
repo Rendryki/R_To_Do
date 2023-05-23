@@ -1,4 +1,4 @@
-# ToDo List
+# R_To_Do
 
 This project is a Single Page Application developed in React, using Next.js and TypeScript!
 
